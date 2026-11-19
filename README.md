@@ -2,14 +2,21 @@
 
 ## Supabase configuration
 
-Vite reads this project's environment variables from `src/.env.local`. Set:
+Vite reads environment variables from the project root. Copy `.env.example` to `.env.local` and set:
 
 ```env
 VITE_SUPABASE_URL=https://your-project.supabase.co
 VITE_SUPABASE_PUBLISHABLE_KEY=your-supabase-publishable-key
+VITE_ADMIN_EMAIL=admin@example.com
 ```
 
 Restart the Vite development server after changing environment variables.
+
+For Vercel:
+
+1. Open the project in Vercel and go to **Settings > Environment Variables**.
+2. Add `VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY`, and `VITE_ADMIN_EMAIL`.
+3. Redeploy the project.
 
 ## Development
 
